@@ -10,6 +10,7 @@ Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon a
 
 ### Other customer(s) or stakeholder(s)
 - Diehard Pokémon fans who want to check their knowledge or work on memorizing new Pokémon stats
+- New Pokémon fans who do not know every pokemon
 - Nintendo
 - Gamefreak
 
