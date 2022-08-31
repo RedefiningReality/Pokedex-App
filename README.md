@@ -9,7 +9,7 @@ Using AI, take a picture of an unknown Pokémon and learn about its attributes. 
 
 ### Other customer(s) or stakeholder(s)
 
-## Application type (web app, mobile, website, native client, …)
+## Application Type (web app, mobile, website, native client, …)
  
 ### Tech stack
 
