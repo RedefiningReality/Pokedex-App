@@ -10,6 +10,8 @@ Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon a
 
 ### Other customer(s) or stakeholder(s)
 - Diehard Pokémon fans who want to check their knowledge or work on memorizing new Pokémon stats
+- Nintendo
+- Gamefreak
 
 ## Application Type
 Mobile application that can be used on smartphones and tablets equipped with a camera.
