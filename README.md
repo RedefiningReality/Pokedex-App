@@ -28,6 +28,7 @@ Mobile application that can be used on smartphones and tablets equipped with a c
 3. Identify each Pokémon
 4. Allow user to select an identified Pokémon
 5. Describe the selected Pokémon to the user
+6. Siri description
 
 ## Top Two Scenarios
 
