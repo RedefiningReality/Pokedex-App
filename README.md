@@ -23,8 +23,8 @@ Mobile application that can be used on smartphones and tablets equipped with a c
 1. Take a photo within the application
 2. Locate potential Pokemon in the photo
 3. Identify each Pokemon
-4. Display information about each Pokemon to the user
-5. 
+4. Allow user to select an identified pokemon
+5. Describe the selected Pokemon to the user
 
 ## Top Two to Three Scenarios
 
