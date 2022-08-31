@@ -30,7 +30,7 @@ Please create a table for the details below
 | Name |	Location	| Time zone offset from Chicago (Chicago is 0 offset)|
 | --- | --- | --- |
 | John Ford | Chicago | 0 |
-| Geovanni Pallares | --- | --- |
+| Geovanni Pallares | Chicago | 0 |
 | Yousef Suleiman | --- | --- |
 | Francisco Chavez | --- | --- |
 | Elliot Willming | --- | --- |
