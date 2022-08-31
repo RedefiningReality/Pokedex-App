@@ -6,10 +6,10 @@ Using AI, take a picture of an unknown Pokémon and learn about its attributes. 
 
 ## Customer
 ### Description
-People who are aspiring Pokémon enthusiast, play a Pokémon game, or watch the Pokémon anime, especially those who don't have much prior Pokémon experience.
+Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon anime, especially those who don't have much prior Pokémon experience.
 
 ### Other customer(s) or stakeholder(s)
-- People who are diehard Pokémon fans
+- Diehard Pokémon fans
 - 
 
 ## Application Type
