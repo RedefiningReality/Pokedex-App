@@ -29,7 +29,7 @@ Mobile application that can be used on smartphones and tablets equipped with a c
 ## Top Two to Three Scenarios
 
 ### Scenario #1
-Bob is playing Pokémon and encounters one that he does not know the stats for in battle. He doesn't know what Pokémon of his would pair up well against this Pokémon. He downloads the Pokedex App and takes a picture of the Pokémon he encountered. The app then shows him all the relevant stats and information about this Pokémon. He then looks at which Pokémon he has available and decides which one to use in battle.
+Bob is playing Pokémon and encounters one that he does not know the stats for in battle. He doesn't know which of his Pokémon would pair up well against this Pokémon. He downloads the Pokedex App and takes a picture of the unknown Pokémon he encountered. The app then shows him all the relevant stats and information about this Pokémon. He then looks at which Pokémon he has available and decides which one to use in battle.
 
 ### Scenario #2
 ### Scenario #3
