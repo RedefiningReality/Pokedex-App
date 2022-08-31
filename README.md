@@ -12,7 +12,7 @@ Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon a
 - Diehard Pokémon fans who want to check their knowledge or work on memorizing new Pokémon stats
 - New Pokémon fans who do not yet know every Pokémon
 - Companies like Nintendo and Gamefreak because it facilitates use of their games/products
-- Competitive Pokemon Players
+- Competitive Pokémon players who need quick and easy access to information about each of their Pokémon
 
 ## Application Type
 Mobile application that can be used on smartphones and tablets equipped with a camera.
