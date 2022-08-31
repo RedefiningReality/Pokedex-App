@@ -13,6 +13,7 @@ Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon a
 - New Pokémon fans who do not know every pokemon
 - Nintendo
 - Gamefreak
+- Competitive Pokemon Players
 
 ## Application Type
 Mobile application that can be used on smartphones and tablets equipped with a camera.
