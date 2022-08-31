@@ -26,15 +26,13 @@ Mobile application that can be used on smartphones and tablets equipped with a c
 4. Allow user to select an identified Pokémon
 5. Describe the selected Pokémon to the user
 
-## Top Two to Three Scenarios
+## Top Two Scenarios
 
 ### Scenario #1
 Bob is playing Pokémon and encounters one that he does not know the stats for in battle. He doesn't know which of his Pokémon would pair up well against this Pokémon. He downloads the Pokedex App and takes a picture of the unknown Pokémon he encountered. The app then shows him all the relevant stats and information about this Pokémon. He then looks at which Pokémon he has available and decides which one to use in battle.
 
 ### Scenario #2
 Bob was watching a Pokémon anime for the first time and was fascinated by their abilities. He was unfamiliar with some of those Pokémon and wanted to learn more about them. Bob used the Pokedex application to take pictures of the Pokémon in the show and found out who they are as well as some fun facts about each one. Bob is happy.
-
-### Scenario #3
 
 ## Team Members
 Please create a table for the details below 
