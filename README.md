@@ -21,14 +21,16 @@ Mobile application that can be used on smartphones and tablets equipped with a c
  
 ## Top Application Capabilities (name at least 5)
 1. Take a photo within the application
-2. Locate potential Pokemon in the photo
-3. Identify each Pokemon
-4. Allow user to select an identified pokemon
-5. Describe the selected Pokemon to the user
+2. Locate potential Pokémon in the photo
+3. Identify each Pokémon
+4. Allow user to select an identified Pokémon
+5. Describe the selected Pokémon to the user
 
 ## Top Two to Three Scenarios
 
 ### Scenario #1
+Bob is playing Pokémon and encounters one that he does not know the stats for in battle. He doesn't know what Pokémon of his would pair up well against this Pokémon. He downloads the Pokedex App and takes a picture of the Pokémon he encountered. The app then shows him all the relevant stats and information about this Pokémon. He then looks at which Pokémon he has available and decides which one to use in battle.
+
 ### Scenario #2
 ### Scenario #3
 
