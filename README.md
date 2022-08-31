@@ -9,7 +9,7 @@ Using AI, take a picture of an unknown Pokémon and learn about its attributes. 
 Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon anime, especially those who don't have much prior Pokémon experience.
 
 ### Other customer(s) or stakeholder(s)
-- Diehard Pokémon fans
+- Diehard Pokémon fans who want to check their knowledge or work on memorizing new Pokémon stats
 
 ## Application Type
 Mobile application that can be used on smartphones and tablets equipped with a camera.
