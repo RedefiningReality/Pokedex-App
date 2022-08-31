@@ -10,10 +10,9 @@ Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon a
 
 ### Other customer(s) or stakeholder(s)
 - Diehard Pokémon fans
-- 
 
 ## Application Type
-Mobile Application that can be used on smartphones and tablets equipped with a camera
+Mobile application that can be used on smartphones and tablets equipped with a camera.
  
 ### Tech stack
 
