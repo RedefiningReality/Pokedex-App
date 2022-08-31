@@ -32,5 +32,5 @@ Please create a table for the details below
 | John Ford | Chicago | 0 |
 | Geovanni Pallares | Chicago | 0 |
 | Yousef Suleiman | --- | --- |
-| Francisco Chavez | --- | --- |
+| Francisco Chavez | Chicago | 0 |
 | Elliot Willming | --- | --- |
