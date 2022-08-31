@@ -13,7 +13,7 @@ Any aspiring Pokémon enthusiast, Pokémon game player, or watcher of Pokémon a
 - 
 
 ## Application Type
-Mobile Application
+Mobile Application that can be used on smartphones and tablets equipped with a camera
  
 ### Tech stack
 
