@@ -53,14 +53,12 @@ Please create a table for the details below
 ### What do we want to accomplish/learn together?
 
 ### Tools
-#### Examples (edit and add your own)
 - We will use Github for version control. Team-members will push their finished code to a branch to ensure the main branch remains bug-free.
 - If we need to meet outside of class we have found a mutually agreeable time at:
 - If we need to meet outside of class we will use the following tool/tech for meetings:
 - When we are not meeting together we will use the following tool/tech for communications:
 
-### Requested Approach/Behavior 
-##### Examples (edit and add your own)
+### Requested Approach/Behavior
 - We will communicate respectfully in a professional manner. Discussions only. No arguing/name calling of any kind. Respect the ideas of each team member.
 - We will divide work fairly. Each member will be responsible for the work they choose to be assigned to (based on their skillset). Each member should be assigned to one or more stories on the Kanban board.
 
