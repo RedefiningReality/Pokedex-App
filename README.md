@@ -65,6 +65,7 @@ Please create a table for the details below
 - When we are not meeting together we will use the following tools/tech for communications:
 - - Discord
 - - Email:
+
 | Member Name | Email |
 | --- | --- |
 | Elliot Willming | elliotwillming53@gmail.com |
