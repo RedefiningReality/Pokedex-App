@@ -52,27 +52,36 @@ Please create a table for the details below
 ## Team Working Agreement (All team members)
 ### What do we want to accomplish/learn together?
 - Develop a working application
-- Learn how to use the React framework to develop Android and iOS applications
-- 
+- Learn how to use the React Native framework to develop Android and iOS applications
+- Use machine learning tools to facilitate image classification
+-Learn how to use the Agile framework to develop an application from scratch
+
 ### Tools
 - We will use Google Docs to collaboratively formulate our ideas.
-- We will use Github for version control. Team-members will push their finished code to a branch to ensure the main branch remains bug-free.
-- If we need to meet outside of class we have found a mutually agreeable time at: 
-- If we need to meet outside of class we will use the following tool/tech for meetings:
+- We will use Google Drive to exchange required files in instances where this might make more sense than uploading them to our GitHub repository.
+- We will use GitHub for version control. Team-members will push their finished code to a branch to ensure the main branch remains bug-free.
+- If we need to meet outside of class we will meet mornings on any day, later evening (after 7:30pm) Friday or on weekends. A time can be decided as necessary in the Discord.
+- If we need to meet outside of class we will use the following tool/tech for meetings: Discord
 - When we are not meeting together we will use the following tool/tech for communications:
+	* Discord
+	* Email:
+* Elliot Willming elliotwillming53@gmail.com
+* Francisco Chavez fchavez2@hawk.iit.edu
+* Yousef Suleiman ysuleiman@hawk.iit.edu
+* John Ford jford11@hawk.iit.edu
+* Geovanni Pallaresn gpallares@hawk.iit.edu
 
 ### Requested Approach/Behavior
 - We will communicate respectfully in a professional manner. Discussions only. No arguing/name calling of any kind. Respect the ideas of each team member.
 - We will divide work fairly. Each member will be responsible for the work they choose to be assigned to (based on their skillset). Each member should be assigned to one or more stories on the Kanban board.
 
 ### Unacceptable behavior
-- No one member will be forced to take all the work upon themselves.
+- No one member will be forced to take all the work upon themselves. No member will take work upon themselves without permission of the rest of the group.
 - We will not make comments that are disrespectful or potentially harmful towards fellow team members.
-- 
 - There will be no plagiarism of any of the code without giving due credit to the author.
 
 ### How will we productively solve disagreement
-- We will make sure everyone has a voice and the opportunity to share their ideas
-- We will discuss all possible solutions as well as the pros and cons
-- We will attempt to come to a mutual agreement on how to approach the problem
-- If we cannot come to a mutual agreement between all members, it will be put to a majority vote
+- We will make sure everyone has a voice and the opportunity to share their ideas.
+- We will discuss all possible solutions as well as the pros and cons.
+- We will attempt to come to a mutual agreement on how to approach the problem.
+- If we cannot come to a mutual agreement between all members, it will be put to a majority vote.
