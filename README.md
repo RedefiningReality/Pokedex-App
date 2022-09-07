@@ -61,15 +61,17 @@ Please create a table for the details below
 - We will use Google Drive to exchange required files in instances where this might make more sense than uploading them to our GitHub repository.
 - We will use GitHub for version control. Team-members will push their finished code to a branch to ensure the main branch remains bug-free.
 - If we need to meet outside of class we will meet mornings on any day, later evening (after 7:30pm) Friday or on weekends. A time can be decided as necessary in the Discord.
-- If we need to meet outside of class we will use the following tool/tech for meetings: Discord
-- When we are not meeting together we will use the following tool/tech for communications:
-	* Discord
-	* Email:
-* Elliot Willming elliotwillming53@gmail.com
-* Francisco Chavez fchavez2@hawk.iit.edu
-* Yousef Suleiman ysuleiman@hawk.iit.edu
-* John Ford jford11@hawk.iit.edu
-* Geovanni Pallaresn gpallares@hawk.iit.edu
+- If we need to meet outside of class we will use the following tool/tech for meetings: Discord text/voice chat
+- When we are not meeting together we will use the following tools/tech for communications:
+- - Discord
+- - Email:
+| Member Name | Email |
+| --- | --- |
+| Elliot Willming | elliotwillming53@gmail.com |
+| Francisco Chavez | fchavez2@hawk.iit.edu |
+| Yousef Suleiman | ysuleiman@hawk.iit.edu |
+| John Ford | jford11@hawk.iit.edu |
+| Geovanni Pallares | gpallares@hawk.iit.edu |
 
 ### Requested Approach/Behavior
 - We will communicate respectfully in a professional manner. Discussions only. No arguing/name calling of any kind. Respect the ideas of each team member.
