@@ -63,8 +63,8 @@ Please create a table for the details below
 - If we need to meet outside of class we will meet mornings on any day, later evening (after 7:30pm) Friday or on weekends. A time can be decided as necessary in the Discord.
 - If we need to meet outside of class we will use the following tool/tech for meetings: Discord text/voice chat
 - When we are not meeting together we will use the following tools/tech for communications:
-- - Discord
-- - Email:
+ - Discord
+ - Email:
 
 | Member Name | Email |
 | --- | --- |
