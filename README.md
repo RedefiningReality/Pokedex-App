@@ -55,12 +55,12 @@ Please create a table for the details below
 | Francisco Chavez | Chicago | 0 |
 | Elliot Willming | Chicago | 0 |
 
-## Team Working Agreement (All team members)
+## Team Working Agreement
 ### What do we want to accomplish/learn together?
 - Develop a working application
 - Learn how to use the React Native framework to develop Android and iOS applications
 - Use machine learning tools to facilitate image classification
--Learn how to use the Agile framework to develop an application from scratch
+- Learn how to use the Agile framework to develop an application from scratch
 
 ### Tools
 - We will use Google Docs to collaboratively formulate our ideas.
@@ -94,3 +94,22 @@ Please create a table for the details below
 - We will discuss all possible solutions as well as the pros and cons.
 - We will attempt to come to a mutual agreement on how to approach the problem.
 - If we cannot come to a mutual agreement between all members, it will be put to a majority vote.
+
+## Sprint Schedule
+
+| Week | Sprint Leader |
+| --------  | ------------------- |
+| 1 - Problem Framing                                 | Team member #1              |
+| 2 - Problem Framing                                 | Team member #1             |
+| 3 - Problem Framing                                 | Team member #2|
+| 4 - Problem Framing                                 | Team member #2|
+| 5 - Think, build, test, and demo for midterm        | Team member #3 |
+| 6 - Think, build, test, and demo for midterm        | Team member #3 |
+| 7 - Think, build, test, and demo for midterm        | Team member #4|
+| 8 - Think, build, test, and demo for midterm        | Team member #4|
+| 9 - Spring Break                                    | N/A               |
+| 10 - Think, build, test, and demo for final	      |  Team member #5      |
+| 11 - Think, build, test, and demo for final         | Team member #5          |
+| 12 - Think, build, test, and demo for final         | Team member #1          |
+| 13 - Presentation dry run                           | Team member #1   |
+| 14 - Presentation                                   | Team member #2|
