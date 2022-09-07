@@ -20,9 +20,10 @@ Mobile application that can be used on smartphones and tablets equipped with a c
 ### Tech stack
 
 #### Client Tech (Frontend)
-⁠- Smartphone (Android or iOS)
-⁠- Camera
+- Smartphone (Android or iOS)
+- Camera
 ⁠- [React Native](https://reactnative.dev/)
+
 #### Server Tech (Backend)
 - PC (desktop or laptop) for development
 - [Python](https://www.python.org/)
