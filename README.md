@@ -19,16 +19,21 @@ Mobile application that can be used on smartphones and tablets equipped with a c
  
 ### Tech stack
 
-#### Client Tech 
-#### Server Tech
- 
+#### Client Tech (Frontend)
+⁠- Smartphone (Android or iOS)
+⁠- Camera
+⁠- [React Native](https://reactnative.dev/)
+#### Server Tech (Backend)
+- PC (desktop or laptop) for development
+- [Python](https://www.python.org/)
+
 ## Top Application Capabilities (name at least 5)
 1. Take a photo within the application
-2. Locate potential Pokémon in the photo
-3. Identify each Pokémon
-4. Allow user to select an identified Pokémon
-5. Describe the selected Pokémon to the user
-6. Siri description
+2. Identify each Pokémon in the photo
+3. Allow user to select an identified Pokémon
+4. Describe the selected Pokémon to the user
+5. Text-to-Speech description (secondary)
+6. In-Battle move recommender (secondary)
 
 ## Top Two Scenarios
 
