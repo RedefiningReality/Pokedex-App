@@ -26,7 +26,7 @@ Mobile application that can be used on smartphones and tablets equipped with a c
 
 #### Server Tech (Backend)
 - PC (desktop or laptop) for development
-- [Kivy](https://kivy.org/) which creates apps using [Python](https://www.python.org/)
+- [TensorFlow](https://www.tensorflow.org/) in [Python](https://www.python.org/) for Yolov4 object detection
 
 ## Top Application Capabilities (name at least 5)
 1. Take a photo within the application
