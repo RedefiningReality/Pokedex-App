@@ -107,8 +107,8 @@ To be updated
 | 7 - Think, build, test, and demo for midterm        | Team member #4|
 | 8 - Think, build, test, and demo for midterm        | Team member #4|
 | 9 - Spring Break                                    | N/A               |
-| 10 - Think, build, test, and demo for final	      |  Team member #5      |
-| 11 - Think, build, test, and demo for final         | Team member #5          |
+| 10 - Think, build, test, and demo for final	      |  Yousef Suleiman     |
+| 11 - Think, build, test, and demo for final         | Yousef Suleiman          |
 | 12 - Think, build, test, and demo for final         | John Ford          |
 | 13 - Presentation dry run                           | John Ford   |
 | 14 - Presentation                                   | Team member #2|
