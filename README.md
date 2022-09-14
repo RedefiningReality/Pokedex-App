@@ -58,8 +58,8 @@ Please create a table for the details below
 ## Team Working Agreement
 ### What do we want to accomplish/learn together?
 - Develop a working application
-- Learn how to use the React Native framework to develop Android and iOS applications
-- Use machine learning tools to facilitate image classification
+- Learn how to use the Kivy framework to develop Android and iOS applications
+- Use machine learning tools to facilitate object detection
 - Learn how to use the Agile framework to develop an application from scratch
 
 ### Tools
