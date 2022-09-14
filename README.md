@@ -22,7 +22,7 @@ Mobile application that can be used on smartphones and tablets equipped with a c
 #### Client Tech (Frontend)
 - Smartphone (Android or iOS)
 - Camera
-- [React Native](https://reactnative.dev/)
+- [Python](https://www.python.org/)
 
 #### Server Tech (Backend)
 - PC (desktop or laptop) for development
