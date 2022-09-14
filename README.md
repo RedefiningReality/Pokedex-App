@@ -102,8 +102,8 @@ To be updated
 | 2 - Problem Framing                                 | John Ford             |
 | 3 - Problem Framing                                 | Team member #2|
 | 4 - Problem Framing                                 | Team member #2|
-| 5 - Think, build, test, and demo for midterm        | Team member #3 |
-| 6 - Think, build, test, and demo for midterm        | Team member #3 |
+| 5 - Think, build, test, and demo for midterm        | Francisco Chavez |
+| 6 - Think, build, test, and demo for midterm        | Francisco Chavez |
 | 7 - Think, build, test, and demo for midterm        | Team member #4|
 | 8 - Think, build, test, and demo for midterm        | Team member #4|
 | 9 - Spring Break                                    | N/A               |
