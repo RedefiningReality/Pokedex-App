@@ -96,7 +96,7 @@ Please create a table for the details below
 - If we cannot come to a mutual agreement between all members, it will be put to a majority vote.
 
 ## Sprint Schedule
-
+To be updated
 | Week | Sprint Leader |
 | --------  | ------------------- |
 | 1 - Problem Framing                                 | Team member #1              |
