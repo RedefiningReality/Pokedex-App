@@ -100,8 +100,8 @@ To be updated
 | --------  | ------------------- |
 | 1 - Problem Framing                                 | John Ford              |
 | 2 - Problem Framing                                 | John Ford             |
-| 3 - Problem Framing                                 | Team member #2|
-| 4 - Problem Framing                                 | Team member #2|
+| 3 - Problem Framing                                 | Geovanni Pallares|
+| 4 - Problem Framing                                 | Geovanni Pallares|
 | 5 - Think, build, test, and demo for midterm        | Francisco Chavez |
 | 6 - Think, build, test, and demo for midterm        | Francisco Chavez |
 | 7 - Think, build, test, and demo for midterm        | Team member #4|
