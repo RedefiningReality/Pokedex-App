@@ -17,8 +17,9 @@ class_name_to_id_mapping = {"trafficlight": 0,
                            "stop": 1,
                            "speedlimit": 2,
                            "crosswalk": 3}
+image_type = "png"
 
-random.seed(108)
+random.seed(20439472)
 
 # Function to get the data from XML Annotation
 def extract_info_from_xml(xml_file):
@@ -100,7 +101,7 @@ for ann in tqdm(annotations):
 annotations = [os.path.join('annotations', x) for x in os.listdir('annotations') if x[-3:] == "txt"]
 
 # Read images and annotations
-images = [os.path.join('images', x) for x in os.listdir('images')]
+images = [os.path.join('images', x) for x in os.listdir('images') if x[-3:] == image_type]
 annotations = [os.path.join('annotations', x) for x in os.listdir('annotations') if x[-3:] == "txt"]
 
 images.sort()
@@ -110,7 +111,7 @@ annotations.sort()
 train_images, val_images, train_annotations, val_annotations = train_test_split(images, annotations, test_size = 0.2, random_state = 1)
 val_images, test_images, val_annotations, test_annotations = train_test_split(val_images, val_annotations, test_size = 0.5, random_state = 1)
 
-#Utility function to move images 
+# Utility function to move images 
 def move_files_to_folder(list_of_files, destination_folder):
     for f in list_of_files:
         try:
@@ -121,8 +122,8 @@ def move_files_to_folder(list_of_files, destination_folder):
 
 # Move the splits into their folders
 move_files_to_folder(train_images, 'images/train')
-move_files_to_folder(val_images, 'images/val/')
-move_files_to_folder(test_images, 'images/test/')
-move_files_to_folder(train_annotations, 'annotations/train/')
-move_files_to_folder(val_annotations, 'annotations/val/')
-move_files_to_folder(test_annotations, 'annotations/test/')
+move_files_to_folder(val_images, 'images/val')
+move_files_to_folder(test_images, 'images/test')
+move_files_to_folder(train_annotations, 'annotations/train')
+move_files_to_folder(val_annotations, 'annotations/val')
+move_files_to_folder(test_annotations, 'annotations/test')
