@@ -33,6 +33,9 @@
 - Like the mini-game
 
 ## Week 9 ##
+- Please make sure the stories have acceptance criterion
+- Think demo of your product when I arrive for sprint review - who is going to demo
+- Think of using labels to identify the stories that need to be completed to get through scenario one
 
 ## Week 10 ##
 
