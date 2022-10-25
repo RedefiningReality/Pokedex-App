@@ -106,7 +106,7 @@ To be updated
 | 6 - Think, build, test, and demo for midterm        | Francisco Chavez |
 | 7 - Think, build, test, and demo for midterm        | Elliot Willming|
 | 8 - Think, build, test, and demo for midterm        | Elliot Willming|
-| 9 - Spring Break                                    | N/A               |
+| 9 - Fall Break                                    | N/A               |
 | 10 - Think, build, test, and demo for final	      |  Yousef Suleiman     |
 | 11 - Think, build, test, and demo for final         | Yousef Suleiman          |
 | 12 - Think, build, test, and demo for final         | John Ford          |
