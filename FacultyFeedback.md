@@ -38,6 +38,10 @@
 - Think of using labels to identify the stories that need to be completed to get through scenario one
 
 ## Week 10 ##
+- Think about pairing when you hit a blocker to get a "second brain" to rationalize the problem and approach
+- Will an emulator help?  Can the emulator work with cameras?
+- John Ford is the leader in the class for acceptance criterion - nice work
+- Please be ready to demo - when you have working code demoing should not be a big deal
 
 ## Week 11 ##
 
