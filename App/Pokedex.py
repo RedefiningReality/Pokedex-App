@@ -14,6 +14,8 @@ import os
 
 from kivy.uix.screenmanager import ScreenManager, Screen
 
+from Data import *
+
 LabelBase.register(name='Peepo',
                    fn_regular='Peepo.ttf')
 
@@ -69,6 +71,7 @@ class OutputScreen(Screen):
     pname = ObjectProperty(None)
     description = ObjectProperty(None)
     type = ObjectProperty(None)
+    strength = ObjectProperty(None)
     weakness = ObjectProperty(None)
     abilities = ObjectProperty(None)
     hp = ObjectProperty(None)
@@ -83,6 +86,12 @@ class OutputScreen(Screen):
     def display_pokemon(self, name):
         self.image.source = os.path.join('Pokemon UI Images', name + '.png')
         self.pname.text = name
+        pokemonId = int(name[1:4])
+        types = get_types(pokemonId)
+        self.type.text = get_types_string(types)
+        self.strength.text = get_types_string(get_strengths(types))
+        self.weakness.text = get_types_string(get_weaknesses(types))
+        self.evolutions.text = " -> ".join(get_chain_names(pokemonId))
         
 
 class PokedexApp(App):

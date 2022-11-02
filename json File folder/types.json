@@ -1,128 +1,182 @@
 [
   {
     "name": "Normal",
-    "immunes": [ "Ghost" ],
-    "weaknesses": [ "Rock", "Steel" ],
-    "strengths": [],
-    "vulnerablities": [ "Fighting" ]
+    "immunes": [], 
+    "weaknesses": [ "Rock", "Steel" ], 
+    "strengths": [], 
+    "vulnerablities": [ "Fighting" ], 
+    "resistant": [], 
+    "noeffect": [ "Ghost" ], 
+    "color": "#A8A878"
   },
   {
     "name": "Fire",
     "immunes": [],
     "weaknesses": [ "Fire", "Water", "Rock", "Dragon" ],
     "strengths": [ "Grass", "Ice", "Bug", "Steel" ],
-    "vulnerablities": [ "Ground", "Rock", "Water" ]
+    "vulnerablities": [ "Ground", "Rock", "Water" ],
+    "resistant": [ "Fire", "Grass", "Ice", "Bug" ],
+    "noeffect": [],
+    "color": "#F08030"
   },
   {
     "name": "Water",
     "immunes": [],
     "weaknesses": [ "Water", "Grass", "Dragon" ],
     "strengths": [ "Fire", "Ground", "Rock" ],
-    "vulnerablities": [ "Grass", "Electric" ]
+    "vulnerablities": [ "Grass", "Electric" ],
+    "resistant": [ "Fire", "Water", "Ice", "Steel" ],
+    "noeffect": [],
+    "color": "#6890F0"
   },
   {
     "name": "Electric",
     "immunes": [ "Ground" ],
     "weaknesses": [ "Electric", "Grass", "Dragon" ],
     "strengths": [ "Water", "Flying" ],
-    "vulnerablities": [ "Ground" ]
+    "vulnerablities": [ "Ground" ],
+    "resistant": [ "Electric", "Flying", "Steel" ],
+    "noeffect": [],
+    "color": "#F8D030"
   },
   {
     "name": "Grass",
     "immunes": [],
     "weaknesses": [ "Fire", "Grass", "Poison", "Flying", "Bug", "Dragon", "Steel" ],
     "strengths": [ "Water", "Ground", "Rock" ],
-    "vulnerablities": [ "Flying", "Poison", "Bug", "Fire", "Ice" ]
+    "vulnerablities": [ "Flying", "Poison", "Bug", "Fire", "Ice" ],
+    "resistant": [ "Water", "Electric", "Grass", "Ground" ],
+    "noeffect": [],
+    "color": "#77CC55"
   },
   {
     "name": "Ice",
     "immunes": [],
     "weaknesses": [ "Fire", "Water", "Ice", "Steel" ],
     "strengths": [ "Grass", "Ground", "Flying", "Dragon" ],
-    "vulnerablities": [ "Fighting", "Rock", "Steel", "Fire" ]
+    "vulnerablities": [ "Fighting", "Rock", "Steel", "Fire" ],
+    "resistant": [ "Ice" ],
+    "noeffect": [],
+    "color": "#98D8D8"
   },
   {
     "name": "Fighting",
     "immunes": [ "Ghost" ],
     "weaknesses": [ "Poison", "Flying", "Psychic", "Bug", "Fairy" ],
     "strengths": [ "Normal", "Ice", "Rock", "Dark", "Steel" ],
-    "vulnerablities": [ "Flying", "Psychic", "Fairy" ]
+    "vulnerablities": [ "Flying", "Psychic", "Fairy" ],
+    "resistant": [ "Bug", "Rock" ],
+    "noeffect": [],
+    "color": "#C03028"
   },
   {
     "name": "Poison",
     "immunes": [ "Steel" ],
     "weaknesses": [ "Poison", "Ground", "Rock", "Ghost" ],
     "strengths": [ "Grass", "Fairy" ],
-    "vulnerablities": [ "Ground", "Psychic" ]
+    "vulnerablities": [ "Ground", "Psychic" ],
+    "resistant": [ "Grass", "Bug", "Fighting", "Poison" ],
+    "noeffect": [],
+    "color": "#A040A0"
   },
   {
     "name": "Ground",
     "immunes": [ "Flying" ],
     "weaknesses": [ "Grass", "Bug" ],
     "strengths": [ "Fire", "Electric", "Poison", "Rock", "Steel" ],
-    "vulnerablities": [ "Water", "Grass", "Ice" ]
+    "vulnerablities": [ "Water", "Grass", "Ice" ],
+    "resistant": [ "Poison", "Rock" ],
+    "noeffect": ["Electric"],
+    "color": "#E0C068"
   },
   {
     "name": "Flying",
     "immunes": [],
     "weaknesses": [ "Electric", "Rock", "Steel" ],
     "strengths": [ "Grass", "Fighting", "Bug" ],
-    "vulnerablities": [ "Rock", "Electric", "Ice" ]
+    "vulnerablities": [ "Rock", "Electric", "Ice" ],
+    "resistant": [ "Grass", "Fighting", "Bug" ],
+    "noeffect": [ "Ground" ],
+    "color": "#A890F0"
   },
   {
     "name": "Psychic",
     "immunes": [ "Dark" ],
     "weaknesses": [ "Psychic", "Steel" ],
     "strengths": [ "Fighting", "Poison" ],
-    "vulnerablities": [ "Bug", "Ghost", "Dark" ]
+    "vulnerablities": [ "Bug", "Ghost", "Dark" ],
+    "resistant": [ "Fighting", "Psychic" ],
+    "noeffect": [],
+    "color": "#A890F0"
   },
   {
     "name": "Bug",
     "immunes": [],
     "weaknesses": [ "Fire", "Fighting", "Poison", "Flying", "Ghost", "Steel", "Fairy" ],
     "strengths": [ "Grass", "Psychic", "Dark" ],
-    "vulnerablities": [ "Flying", "Rock", "Fire" ]
+    "vulnerablities": [ "Flying", "Rock", "Fire" ],
+    "resistant": [ "Grass", "Fighting", "Ground" ],
+    "noeffect": [],
+    "color": "#A8B820"
   },
   {
     "name": "Rock",
     "immunes": [],
     "weaknesses": [ "Fighting", "Ground", "Steel" ],
     "strengths": [ "Fire", "Ice", "Flying", "Bug" ],
-    "vulnerablities": [ "Fighting", "Ground", "Steel", "Water", "Grass" ]
+    "vulnerablities": [ "Fighting", "Ground", "Steel", "Water", "Grass" ],
+    "resistant": [ "Normal", "Fire", "Poison", "Flying" ],
+    "noeffect": [],
+    "color": "#B8A038"
   },
   {
     "name": "Ghost",
     "immunes": [ "Normal" ],
     "weaknesses": [ "Dark" ],
     "strengths": [ "Psychic", "Ghost" ],
-    "vulnerablities": []
+    "vulnerablities": [],
+    "resistant": [ "Poison", "Bug" ],
+    "noeffect": [ "Normal", "Fighting" ],
+    "color": "#705898"
   },
   {
     "name": "Dragon",
     "immunes": [ "Fairy" ],
     "weaknesses": [ "Steel" ],
     "strengths": [ "Dragon" ],
-    "vulnerablities": [ "Ice", "Dragon", "Fairy" ]
+    "vulnerablities": [ "Ice", "Dragon", "Fairy" ],
+    "resistant": [ "Fire", "Water", "Electric", "Ice" ],
+    "noeffect": [],
+    "color": "#7038F8"
   },
   {
     "name": "Dark",
     "immunes": [],
     "weaknesses": [ "Fighting", "Dark", "Fairy" ],
     "strengths": [ "Psychic", "Ghost" ],
-    "vulnerablities": [ "Fighting", "Bug", "Fairy" ]
+    "vulnerablities": [ "Fighting", "Bug", "Fairy" ],
+    "resistant": [ "Ghost", "Dark"],
+    "noeffect": [ "Psychic" ],
+    "color": "#705848"
   },
   {
     "name": "Steel",
     "immunes": [],
     "weaknesses": [ "Fire", "Water", "Electric", "Steel" ],
     "strengths": [ "Ice", "Rock", "Fairy" ],
-    "vulnerablities": [ "Fighting", "Ground", "Fire" ]
+    "vulnerablities": [ "Fighting", "Ground", "Fire" ],
+    "resistant": [ "Normal", "Grass", "Ice", "Poison", "Flying", "Psychic", "Bug", "Rock", "Dragon", "Steel", "Fairy" ],
+    "noeffect": [],
+    "color": "#B8B8D0"
   },
   {
     "name": "Fairy",
     "immunes": [],
     "weaknesses": [ "Fire", "Poison", "Steel" ],
     "strengths": [ "Fighting", "Dragon", "Dark" ],
-    "vulnerablities": [ "Poison", "Steel" ]
+    "vulnerablities": [ "Poison", "Steel" ],
+    "resistant": [ "Fighting", "Bug", "Dark" ],
+    "noeffect": [ "Dragon" ],
+    "color": "#F0B6BC"
   }
 ]

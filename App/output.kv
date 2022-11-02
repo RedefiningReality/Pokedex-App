@@ -4,6 +4,7 @@
 	pname: name
 	description: description
 	type: type
+	strength: strength
 	weakness: weakness
 	abilities: abilities
 	hp: hp
@@ -74,6 +75,23 @@
 				height: self.texture_size[1]
 				text_size: self.width, None 
 				text: '   [color=#88cc1b]Grass[/color]' + '   ' + '[color=#c334eb]Poison[/color]'
+				font_name: 'Peepo'
+				font_size: '20sp'
+			Label:											#Strength Label
+				size_hint_y: None
+				height: self.texture_size[1]
+				text_size: self.width, None 
+				text: 'Strength:'
+				font_name: 'Peepo'
+				font_size: '20sp'
+				color: 0, 0, 0, 1
+			Label:											#Strength 
+				id: strength
+				markup: True
+				size_hint_y: None
+				height: self.texture_size[1]
+				text_size: self.width, None 
+				text: '   [color=#ff3d51]Fire[/color]' + '   ' + '[color=#5c8ff7]Flying[/color]' + '   ' + '[color=#ffffff]Ice[/color]' + '   ' + '[color=#fc03e8]Psychic[/color]'
 				font_name: 'Peepo'
 				font_size: '20sp'
 			Label:											#Weakness Label
