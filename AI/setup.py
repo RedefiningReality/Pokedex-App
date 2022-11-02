@@ -1,10 +1,9 @@
-import argparse
+import sys, argparse
 import torch
 from IPython.display import Image  # for displaying images
 import os 
 import random
 import shutil
-import csv
 from sklearn.model_selection import train_test_split
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -13,8 +12,6 @@ from PIL import Image, ImageDraw
 import numpy as np
 import matplotlib.pyplot as plt
 
-random.seed(20439472)
-
 def parse_opt(args):
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--images-directory", type=str, default="images")
@@ -22,17 +19,22 @@ def parse_opt(args):
     parser.add_argument("-t", "--image-type", type=str, default="png")
     parser.add_argument("-c", "--classes-file", type=str, default="classes.txt")
     parser.add_argument("-o", "--output-directory", type=str, default="")
+    parser.add_argument("-d", "--data-directory", type=str, default="yolov5/data")
+    parser.add_argument("-n", "--yaml-file-name", type=str, default="data.yaml")
     return parser.parse_args(args)
 
-# Reads classes from csv file
-def read_classes(csv_file):
-    with open(csv_file, newline='') as file:
-        data = list(csv.reader(file))
+args = parse_opt(sys.argv[1:])
+random.seed(20439472)
 
-    classes = {}
-    for i in range(len(data)):
-        classes[data[i]] = i
-    return classes
+# Reads classes from classes file
+def read_classes(classes_file):
+    with open(classes_file) as file:
+        classes = [line.rstrip() for line in file]
+    
+    classes_by_id = {}
+    for i in range(len(classes)):
+        classes_by_id[classes[i]] = i
+    return classes, classes_by_id
 
 # Function to get the data from XML Annotation
 def extract_info_from_xml(xml_file):
@@ -77,9 +79,9 @@ def convert_to_yolov5(info_dict):
     # For each bounding box
     for b in info_dict["bboxes"]:
         try:
-            class_id = class_name_to_id_mapping[b["class"]]
+            class_id = classes_by_id[b["class"]]
         except KeyError:
-            print("Invalid Class. Must be one from ", class_name_to_id_mapping.keys())
+            print("Invalid Class. Must be one from ", classes_by_id.keys())
         
         # Transform the bbox co-ordinates as per the format required by YOLO v5
         b_center_x = (b["xmin"] + b["xmax"]) / 2 
@@ -98,10 +100,30 @@ def convert_to_yolov5(info_dict):
         print_buffer.append("{} {:.3f} {:.3f} {:.3f} {:.3f}".format(class_id, b_center_x, b_center_y, b_width, b_height))
         
     # Name of the file which we have to save 
-    save_file_name = os.path.join(args.output_directory, "labels", info_dict["filename"].replace("png", "txt"))
+    save_file_name = os.path.join(args.output_directory, "labels", info_dict["filename"].replace(args.image_type, "txt"))
     
     # Save the annotation to disk
     print("\n".join(print_buffer), file=open(save_file_name, "w"))
+
+def write_yaml(file_name):    
+    images_path = os.path.relpath(args.images_directory, args.data_directory)
+    
+    train_path = "train: " + os.path.join(images_path, "train")
+    val_path = "val: " + os.path.join(images_path, "val")
+    test_path = "test: "
+    
+    num_classes = "nc: " + str(len(classes))
+    class_names = "names: " + str(classes)
+    
+    print_buffer = []
+    print_buffer.append(train_path)
+    print_buffer.append(val_path)
+    print_buffer.append(test_path)
+    print_buffer.append("")
+    print_buffer.append(num_classes)
+    print_buffer.append(class_names)
+    
+    print("\n".join(print_buffer), file=open(file_name, "w"))
 
 # Utility function to make a folder
 def make_folder(path1, path2=''):
@@ -117,13 +139,6 @@ def move_files_to_folder(list_of_files, destination_folder):
             print(f)
             assert False
 
-args = parse_opt(sys.argv[1:])
-print(args.images_directory)
-print(args.annotations_directory)
-print(args.base_directory)
-print(args.classes_file)
-print(args.image_type)
-
 """
 images = [x for x in os.listdir(args.images_directory) if x[-3:] == image_type]
 annotations = [x for x in os.listdir(args.annotations_directory) if x[-3:] == "xml"]
@@ -132,9 +147,18 @@ move_files_to_folder(images, 'images')
 move_files_to_folder(annotations, 'annotations')
 """
 
+classes, classes_by_id = read_classes(args.classes_file)
+
 # Get the annotations
 annotations = [os.path.join(args.annotations_directory, x) for x in os.listdir(args.annotations_directory) if x[-3:] == "xml"]
 annotations.sort()
+
+# Make the train and validate folders
+make_folder(args.output_directory, "images/train")
+make_folder(args.output_directory, "images/val")
+
+make_folder(args.output_directory, "labels/train")
+make_folder(args.output_directory, "labels/val")
 
 # Convert and save the annotations as labels
 for ann in tqdm(annotations):
@@ -142,7 +166,7 @@ for ann in tqdm(annotations):
     convert_to_yolov5(info_dict)
 
 # Read images and labels
-images = [os.path.join(args.images_directory, x) for x in os.listdir(args.images_directory) if x[-3:] == image_type]
+images = [os.path.join(args.images_directory, x) for x in os.listdir(args.images_directory) if x[-3:] == args.image_type]
 labels_dir = os.path.join(args.output_directory, "labels")
 labels = [os.path.join(labels_dir, x) for x in os.listdir(labels_dir) if x[-3:] == "txt"]
 
@@ -152,15 +176,11 @@ labels.sort()
 # Split the dataset into train-validate splits 
 train_images, val_images, train_labels, val_labels = train_test_split(images, labels, test_size = 0.2, random_state = 1)
 
-# Make the train and validate folders
-make_folder(args.output_directory, "images/train")
-make_folder(args.output_directory, "images/val")
-
-make_folder(args.output_directory, "labels/train")
-make_folder(args.output_directory, "labels/val")
-
 # Move the splits into their folders
 move_files_to_folder(train_images, 'images/train')
 move_files_to_folder(val_images, 'images/val')
-move_files_to_folder(train_annotations, 'labels/train')
-move_files_to_folder(val_annotations, 'labels/val')
+move_files_to_folder(train_labels, 'labels/train')
+move_files_to_folder(val_labels, 'labels/val')
+
+yaml_file = os.path.join(args.data_directory, args.yaml_file_name)
+write_yaml(yaml_file)
