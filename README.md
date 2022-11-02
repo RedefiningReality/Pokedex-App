@@ -98,17 +98,16 @@ Please create a table for the details below
 To be updated
 | Week | Sprint Leader |
 | --------  | ------------------- |
-| 1 - Problem Framing                                 | John Ford              |
-| 2 - Problem Framing                                 | John Ford             |
-| 3 - Problem Framing                                 | Geovanni Pallares|
-| 4 - Problem Framing                                 | Geovanni Pallares|
-| 5 - Think, build, test, and demo for midterm        | Francisco Chavez |
-| 6 - Think, build, test, and demo for midterm        | Francisco Chavez |
-| 7 - Think, build, test, and demo for midterm        | Elliot Willming|
-| 8 - Think, build, test, and demo for midterm        | Elliot Willming|
-| 9 - Fall Break                                    | N/A               |
-| 10 - Think, build, test, and demo for final	      |  Yousef Suleiman     |
-| 11 - Think, build, test, and demo for final         | Yousef Suleiman          |
-| 12 - Think, build, test, and demo for final         | John Ford          |
-| 13 - Presentation dry run                           | John Ford   |
-| 14 - Presentation                                   | Geovanni Pallares|
+| 3 - Problem Framing                                 | John Ford              |
+| 4 - Problem Framing                                 | John Ford             |
+| 5 - Problem Framing                                 | Geovanni Pallares|
+| 6 - Problem Framing                                 | Geovanni Pallares|
+| 7 - Think, build, test, and demo for midterm        | Francisco Chavez |
+| 8 - Think, build, test, and demo for midterm        | Francisco Chavez |
+| 9 - Think, build, test, and demo for midterm        | Elliot Willming|
+| 10 - Think, build, test, and demo for midterm        | Elliot Willming|
+| 11 - Think, build, test, and demo for final	      |  Yousef Suleiman     |
+| 12 - Think, build, test, and demo for final         | Yousef Suleiman          |
+| 13 - Think, build, test, and demo for final         | John Ford          |
+| 14 - Presentation dry run                           | John Ford   |
+| 15 - Presentation                                   | Geovanni Pallares|
