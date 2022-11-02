@@ -44,6 +44,9 @@
 - Please be ready to demo - when you have working code demoing should not be a big deal
 
 ## Week 11 ##
+- Think about the stories that you need to complete for the final demo
+- Emulator will be easier for screen sharing
+- Think about the stories that you need to complete for the final demo
 
 ## Week 12 ##
 
