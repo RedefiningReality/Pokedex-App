@@ -97,9 +97,40 @@ def get_moveset(pokemonId):
     with open ('json File folder/preferred-moves.json', "r") as preferredFile:
         preferredJson = json.loads(preferredFile.read())
         movesetList = next(l for l in preferredJson if l["id"] == pokemonId)["moveset"]
+        if len(movesetList) == 0:
+            movesetList = [0, 1, 2, 3]
         with open ('json File folder/' + str(pokemonId) + '.json', "r") as pokemonFile:
             pokemonJson = json.loads(pokemonFile.read())
             movesetNames = []
             for moveIndex in movesetList:
                 movesetNames.append(pokemonJson["moves"][int(moveIndex)]["move"]["name"])
             return movesetNames
+
+def get_abilities(pokemonId):
+    with open ('json File folder/' + str(pokemonId) + '.json', "r") as pokemonFile:
+        pokemonJson = json.loads(pokemonFile.read())
+        return [a["ability"]["name"].capitalize() for a in pokemonJson["abilities"]]
+
+#[hp, attack, defense, sp. attack, sp. defense, speed]
+def get_stats(pokemonId):
+    with open ('json File folder/' + str(pokemonId) + '.json', "r") as pokemonFile:
+        pokemonJson = json.loads(pokemonFile.read())
+        return [a["base_stat"] for a in pokemonJson["stats"]]
+
+def get_description(pokemonId):
+    with open ('json File folder/descriptions.json', "r") as f:
+        data = json.loads(f.read())
+        return next(d for d in data if d["id"] == pokemonId)["description"]
+
+def get_color_list(value):
+    if value > 15 / 18:
+        return [0, .65, .62, 1]
+    if value > 12 / 18:
+        return [.14, .8, .37, 1]
+    if value > 9 / 18:
+        return [.63, .9, .08, 1]
+    if value > 6 / 18:
+        return [1, .87, .34, 1]
+    if value > 3 / 18:
+        return [1, .5, .06, 1]
+    return [.95, .27, .27, 1]

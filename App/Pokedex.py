@@ -5,7 +5,7 @@ from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.core.text import LabelBase
 from kivy.properties import ObjectProperty
-
+from kivy.graphics import *
 from kivy.core.window import Window
 from kivy.uix.image import Image
 from kivy.uix.scrollview import ScrollView
@@ -80,6 +80,13 @@ class OutputScreen(Screen):
     sp_attack = ObjectProperty(None)
     sp_defense = ObjectProperty(None)
     speed = ObjectProperty(None)
+    hp_label = ObjectProperty(None)
+    attack_label = ObjectProperty(None)
+    defense_label = ObjectProperty(None)
+    sp_attack_label = ObjectProperty(None)
+    sp_defense_label = ObjectProperty(None)
+    speed_label = ObjectProperty(None)
+    sp_attack_color = ObjectProperty(None)
     moveset = ObjectProperty(None)
     evolutions = ObjectProperty(None)
     
@@ -87,10 +94,32 @@ class OutputScreen(Screen):
         self.image.source = os.path.join('Pokemon UI Images', name + '.png')
         self.pname.text = name
         pokemonId = int(name[1:4])
+        self.description.text = get_description(pokemonId)
         types = get_types(pokemonId)
         self.type.text = get_types_string(types)
         self.strength.text = get_types_string(get_strengths(types))
         self.weakness.text = get_types_string(get_weaknesses(types))
+        self.abilities.text = "\n".join(["   " + a for a in get_abilities(pokemonId)])
+        stats = get_stats(pokemonId)
+        self.hp_label.text = str(stats[0])
+        self.hp.value = stats[0] / 180
+        self.hp.color_list = get_color_list(self.hp.value)
+        self.attack_label.text = str(stats[1])
+        self.attack.value = stats[1] / 180
+        self.attack.color_list = get_color_list(self.attack.value)
+        self.defense_label.text = str(stats[2])
+        self.defense.value = stats[2] / 180
+        self.defense.color_list = get_color_list(self.defense.value)
+        self.sp_attack_label.text = str(stats[3])
+        self.sp_attack.value = stats[3] / 180
+        self.sp_attack.color_list = get_color_list(self.sp_attack.value)
+        self.sp_defense_label.text = str(stats[4])
+        self.sp_defense.value = stats[4] / 180
+        self.sp_defense.color_list = get_color_list(self.sp_defense.value)
+        self.speed_label.text = str(stats[5])
+        self.speed.value = stats[5] / 180
+        self.speed.color_list = get_color_list(self.speed.value)
+        self.moveset.text = "\n".join(["   " + m.capitalize() for m in get_moveset(pokemonId)])
         self.evolutions.text = " -> ".join(get_chain_names(pokemonId))
         
 

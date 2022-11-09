@@ -13,6 +13,12 @@
 	sp_attack: sp_attack
 	sp_defense: sp_defense
 	speed: speed
+	hp_label: hp_label
+	attack_label: attack_label
+	defense_label: defense_label
+	sp_attack_label: sp_attack_label
+	sp_defense_label: sp_defense_label
+	speed_label: speed_label
 	moveset: moveset
 	evolutions: evolutions
 
@@ -142,6 +148,7 @@
 				size_hint_y: None
 				spacing: 5
 				Label:											#HP
+					id: hp_label
 					size_hint_y: None
 					height: self.texture_size[1]
 					text_size: self.width, None 
@@ -156,6 +163,7 @@
 					min: 0
 					max: 1
 					value: 0.25
+					color_list: [0, 0.8, 0, 1]
 					canvas:
 						Color:
 							rgba: 0, 0.85, 1, 1
@@ -164,12 +172,13 @@
 							pos: self.x, self.center_y - 12
 							size: self.width, 24
 						Color:
-							rgba: 0, 0.8, 0, 1
+							rgba: self.color_list
 						BorderImage:
 							border: [int(min(self.width * (self.value / float(self.max)) if self.max else 0, 12))] * 4
 							pos: self.x, self.center_y - 12
 							size: self.width * (self.value / float(self.max)) if self.max else 0, 24
 				Label:											#Attack
+					id: attack_label
 					size_hint_y: None
 					height: self.texture_size[1]
 					text_size: self.width, None 
@@ -184,6 +193,7 @@
 					min: 0
 					max: 1
 					value: 0.25
+					color_list: [0, 0.8, 0, 1]
 					canvas:
 						Color:
 							rgba: 0, 0.85, 1, 1
@@ -192,12 +202,13 @@
 							pos: self.x, self.center_y - 12
 							size: self.width, 24
 						Color:
-							rgba: 0, 0.8, 0, 1
+							rgba: self.color_list
 						BorderImage:
 							border: [int(min(self.width * (self.value / float(self.max)) if self.max else 0, 12))] * 4
 							pos: self.x, self.center_y - 12
 							size: self.width * (self.value / float(self.max)) if self.max else 0, 24
 				Label:											#Defense
+					id: defense_label
 					size_hint_y: None
 					height: self.texture_size[1]
 					text_size: self.width, None 
@@ -212,6 +223,7 @@
 					min: 0
 					max: 1
 					value: 0.25
+					color_list: [0, 0.8, 0, 1]
 					canvas:
 						Color:
 							rgba: 0, 0.85, 1, 1
@@ -220,12 +232,13 @@
 							pos: self.x, self.center_y - 12
 							size: self.width, 24
 						Color:
-							rgba: 0, 0.8, 0, 1
+							rgba: self.color_list
 						BorderImage:
 							border: [int(min(self.width * (self.value / float(self.max)) if self.max else 0, 12))] * 4
 							pos: self.x, self.center_y - 12
 							size: self.width * (self.value / float(self.max)) if self.max else 0, 24
 				Label:											#Sp. Attack
+					id: sp_attack_label
 					size_hint_y: None
 					height: self.texture_size[1]
 					text_size: self.width, None 
@@ -240,6 +253,7 @@
 					min: 0
 					max: 1
 					value: 0.25
+					color_list: [0, 0.8, 0, 1]
 					canvas:
 						Color:
 							rgba: 0, 0.85, 1, 1
@@ -248,12 +262,13 @@
 							pos: self.x, self.center_y - 12
 							size: self.width, 24
 						Color:
-							rgba: 0, 0.8, 0, 1
+							rgba: self.color_list
 						BorderImage:
 							border: [int(min(self.width * (self.value / float(self.max)) if self.max else 0, 12))] * 4
 							pos: self.x, self.center_y - 12
 							size: self.width * (self.value / float(self.max)) if self.max else 0, 24
 				Label:											#Sp. Defense
+					id: sp_defense_label
 					size_hint_y: None
 					height: self.texture_size[1]
 					text_size: self.width, None 
@@ -268,6 +283,7 @@
 					min: 0
 					max: 1
 					value: 0.25
+					color_list: [0, 0.8, 0, 1]
 					canvas:
 						Color:
 							rgba: 0, 0.85, 1, 1
@@ -276,12 +292,13 @@
 							pos: self.x, self.center_y - 12
 							size: self.width, 24
 						Color:
-							rgba: 0, 0.8, 0, 1
+							rgba: self.color_list
 						BorderImage:
 							border: [int(min(self.width * (self.value / float(self.max)) if self.max else 0, 12))] * 4
 							pos: self.x, self.center_y - 12
 							size: self.width * (self.value / float(self.max)) if self.max else 0, 24
 				Label:											#Speed
+					id: speed_label
 					size_hint_y: None
 					height: self.texture_size[1]
 					text_size: self.width, None 
@@ -296,6 +313,7 @@
 					min: 0
 					max: 1
 					value: 0.25
+					color_list: [0, 0.8, 0, 1]
 					canvas:
 						Color:
 							rgba: 0, 0.85, 1, 1
@@ -304,7 +322,7 @@
 							pos: self.x, self.center_y - 12
 							size: self.width, 24
 						Color:
-							rgba: 0, 0.8, 0, 1
+							rgba: self.color_list
 						BorderImage:
 							border: [int(min(self.width * (self.value / float(self.max)) if self.max else 0, 12))] * 4
 							pos: self.x, self.center_y - 12
