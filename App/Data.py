@@ -91,3 +91,15 @@ def get_types_string(list):
 #"resistant": [], // takes 1/2 damage from
 #"noeffect": [ "Ghost" ], // takes 0 damage from
 #"color": "#A8A878"
+
+
+def get_moveset(pokemonId):
+    with open ('json File folder/preferred-moves.json', "r") as preferredFile:
+        preferredJson = json.loads(preferredFile.read())
+        movesetList = next(l for l in preferredJson if l["id"] == pokemonId)["moveset"]
+        with open ('json File folder/' + str(pokemonId) + '.json', "r") as pokemonFile:
+            pokemonJson = json.loads(pokemonFile.read())
+            movesetNames = []
+            for moveIndex in movesetList:
+                movesetNames.append(pokemonJson["moves"][int(moveIndex)]["move"]["name"])
+            return movesetNames
