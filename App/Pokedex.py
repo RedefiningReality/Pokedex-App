@@ -27,7 +27,7 @@ class StartScreen(GridLayout):
 
         self.add_widget(Label(text=' ', font_size='40sp', font_name = 'Peepo', halign='center', markup=True))
 
-        titleLabel = Label(text='[color=ff3333]Pokedex', font_size='40sp', font_name = 'Peepo', halign='center', markup=True)
+        titleLabel = Label(text='[color=ff3333]PokeScanner', font_size='40sp', font_name = 'Peepo', halign='center', markup=True)
         self.add_widget(titleLabel)
 
         self.add_widget(Label(text=' ', font_size='40sp', font_name = 'Peepo', halign='center', markup=True))
