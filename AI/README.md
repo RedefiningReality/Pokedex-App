@@ -5,7 +5,7 @@
 - Change working directory (cd) to the [yolov5 directory](yolov5)
 - Run `python3 train.py --img 640 --cfg models/yolov5?.yaml --hyp data/hyp.scratch.yaml --batch-size 32 --epochs 100 --data data/data.yaml --workers 24 --project pokedex --name train1`
   - **img:** the training image resolution - recommended is 640 unless higher resolution (such as 1280) is needed for small objects
-  - **cfg:** network architecture yaml file - four options for ? are ***s, m, l, x*** - the larger (more complex) the model, the greater the accuracy but lower the speed
+  - **cfg:** network architecture yaml file - four options for ? are **s**, **m**, **l**, **x** - the larger (more complex) the model, the greater the accuracy but lower the speed
   - **hyp:** hypeparameters file
   - **batch-size:** batch size - should use the highest batch size that hardware allows
   - **epochs:** number of training epochs
