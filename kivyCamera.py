@@ -7,18 +7,21 @@ Builder.load_string('''
     orientation: 'vertical'
     Camera:
         id: camera
-        resolution: (1000, 480)
-        allow_strech: True
-        play: True
-    #ToggleButton:
-    #    text: 'Play'
-    #    on_press: camera.play = not camera.play
-    #    size_hint_y: None
-    #    height: '48dp'
+        resolution: (640, 480)
+        allow_stretch: True
+        keep_ratio: True
+        play: False
+        canvas.before:
+            PushMatrix
+            Rotate:
+                angle: -90
+                origin: self.center
+        canvas.after:
+            PopMatrix
     Button:
         text: 'Capture'
-        size_hint_y: '40dp'
-        height: '96dp'
+        size_hint_y: None
+        height: '48dp'
         on_press: root.capture()
 ''')
 
