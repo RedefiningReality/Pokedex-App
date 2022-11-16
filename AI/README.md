@@ -3,7 +3,7 @@
 - Place images and annotations into the respective directories
 - Run `python3 setup.py`
 - Change working directory (cd) to the [yolov5 directory](yolov5)
-- Run `python3 train.py --img 640 --cfg data/yolov5?.yaml --hyp data/hyp.scratch.yaml --batch-size 32 --epochs 100 --data data/data.yaml --workers 24 --project pokedex --name train1
+- Run `python3 train.py --img 640 --cfg data/yolov5?.yaml --hyp data/hyp.scratch.yaml --batch-size 32 --epochs 100 --data data/data.yaml --workers 24 --project pokedex --name train1`
   - **img:** the training image resolution - recommended is 640 unless higher resolution (such as 1280) is needed for small objects
   - **cfg:** network architecture yaml file
   - **hyp:** hypeparameters file
