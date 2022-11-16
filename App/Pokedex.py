@@ -23,15 +23,32 @@ class StartScreen(GridLayout):
     def __init__(self, **kwargs):
         super(StartScreen, self).__init__(**kwargs)
         self.cols = 1 
-        self.spacing = (0, 10)
+        self.spacing = (0, 50)
+
+        self.add_widget(Label(text=' ', font_size='35sp', font_name = 'Peepo', halign='center', markup=True))
 
         titleLabel = Label(text='[color=ff3333]Pokedex', font_size='40sp', font_name = 'Peepo', halign='center', markup=True)
         self.add_widget(titleLabel)
 
+        self.add_widget(Label(text=' ', font_size='30sp', font_name = 'Peepo', halign='center', markup=True))
+
+        instructionsLabel = Label(text='[color=000000]Click below to scan a Pokemon', font_name = 'Peepo', markup=True)
+        self.add_widget(instructionsLabel)
+
+        
+        button = Button(text='Scan', font_name = 'Peepo',
+                        size=(Window.width, 100),
+                        size_hint=(1, None),
+                        pos_hint={'center_x': 10.0, 'center_y': 50.0},
+                        pos=(Window.width,900),
+                        background_color=(0, 0, 1, 1))
+        button.bind(on_press = self.take_picture)
+        self.add_widget(button)
+        
             
         subgrid = GridLayout(cols=2, size_hint_y=None)        
         #Create list of pokemon
-        for filename in os.listdir('App/Pokemon UI Images'):
+        for filename in os.listdir('Pokemon UI Images'):
             file = os.path.join('Pokemon UI Images', filename)
             subgrid.add_widget( Image(source=file) )
             button = Button(text=str(filename)[:-4], font_name = 'Peepo', background_color = (0.0, 0.7, 0.95, 0.5), color =(0, 0, 0, 1), size = (Window.width, 150), size_hint = (1, None))
@@ -44,16 +61,6 @@ class StartScreen(GridLayout):
         self.add_widget(root)
 
 
-        instructionsLabel = Label(text='[color=000000]Click below to scan a Pokemon', font_name = 'Peepo', markup=True)
-        self.add_widget(instructionsLabel)
-
-        
-        button = Button(text='Scan', font_name = 'Peepo',
-                        size_hint=(.5, .9),
-                        pos_hint={'center_x': .5, 'center_y': .5},
-                        background_color=(0, 0, 1, 1))
-        button.bind(on_press = self.take_picture)
-        self.add_widget(button)
 
     def take_picture(self, instance):
         #Take picture
