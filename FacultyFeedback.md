@@ -55,6 +55,11 @@
 - Dry run and final presentation demo template - https://github.com/mschray/IPro497Sample/blob/main/Course%20Content/Final%20Presentation%20Template.pptx
 
 ## Week 13 ##
+- Name: PokeScanner
+- Dry run on 11/22, final presentation on 11/29 and innovation day on 12/2.
+- Dry run and final presentation demo template - https://github.com/mschray/IPro497Sample/blob/main/Course%20Content/Final%20Presentation%20Template.pptx
+- Focus on coding work that shows the unique value of your product
+- For the dry run week, I'll give you about an hour of time to organize yourselves via team work time and then we'll all come back to the main room and I'll pick teams to present in random order
 
 ## Week 14 ##
 
