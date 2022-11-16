@@ -13,4 +13,5 @@
   - **workers:** "the number of CPU cores used. If you are training DDP Multi-GPU then this is the number of CPU cores used per GPU" - not entirely sure what this means (maybe it's the number of threads?) so just keep it at 24 I guess
   - **project, name:** save weights to project/name
 - Run `val.py --weights pokedex/train1/weights/best.pt --data hyp.scratch.yaml --task test --project pokedex --name test1`
+
 Weights stored in `pokedex/train1/weights/best.pt`
