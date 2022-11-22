@@ -199,7 +199,7 @@ class StartScreen(GridLayout):
     def take_picture(self, instance):
         app.screen_manager.current = 'Camera'
         app.screen_manager.transition.direction = 'left'
-        app.camera_screen.build()
+        app.camera_screen.ids['camera'].play = True
         
     
     def show_statistics(self, instance):
@@ -208,39 +208,44 @@ class StartScreen(GridLayout):
         app.output_screen.display_pokemon(instance.text)
 
 
-class CameraScreen(Screen):
-    def build(self):
-        self.cols = 1 
-        self.spacing = (0, 50)
-        
-        #Camera object
-        self.cameraObject = Camera(play=False, resolution=(640, 480))
-        self.cameraObject.play = True #Turn on camera
-        self.cameraObject.resolution = (640, 480) # Specify the resolution
 
-        #Button for taking photograph
-        self.cameraClick = Button(text="Capture", 
-                                  font_name = 'Peepo',
-                                  font_size='30sp',
-                                  size=(Window.width, 100),
-                                  size_hint=(1, None),
-                                  background_color=(0, 0, 1, 1))
-        self.cameraClick.size_hint=(.5, .2)
-        self.cameraClick.pos_hint={'x': .25, 'y':.75}
-        self.cameraClick.bind(on_press=self.onCameraClick)
-        
-        layout = BoxLayout(orientation='vertical')
-        layout.add_widget(self.cameraObject)
-        layout.add_widget(self.cameraClick)
-        self.add_widget(layout)
-        
-             
-    def onCameraClick(self, *args):
+Builder.load_string('''
+<CameraScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Camera:
+            id: camera
+            resolution: (640, 480)
+            allow_stretch: True
+            keep_ratio: True
+            play: False
+            canvas.before:
+                PushMatrix
+                Rotate:
+                    angle: -90
+                    origin: self.center
+            canvas.after:
+                PopMatrix
+        Button:
+            text: 'Capture'
+            font_name: 'Peepo'
+            size_hint_y: None
+            height: '48dp'
+            background_color: 0, 0, 1, 1
+            size: 
+            on_press: root.capture()
+''')
+
+class CameraScreen(Screen):
+    def capture(self, *args):
+
+        cameraObject = self.ids['camera']
+
         #save image
-        self.cameraObject.export_to_png('pokemonImage.png')
+        cameraObject.export_to_png('pokemonImage.png')
         
         #Close camera
-        self.cameraObject.play = False
+        cameraObject.play = False
         
         #Return to start screen for now
         #Should be changed to output after YOLO runs
