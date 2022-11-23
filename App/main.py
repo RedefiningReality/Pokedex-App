@@ -251,6 +251,8 @@ class CameraScreen(Screen):
         #Should be changed to output after YOLO runs
         app.screen_manager.current = 'Start'
         app.screen_manager.transition.direction = 'right'
+
+        cameraObject.play = False
         
 
 Builder.load_file('output.kv')
@@ -289,22 +291,22 @@ class OutputScreen(Screen):
         self.weakness.text = get_types_string(get_weaknesses(types))
         self.abilities.text = "\n".join(["   " + a for a in get_abilities(pokemonId)])
         stats = get_stats(pokemonId)
-        self.hp_label.text = str(stats[0])
+        self.hp_label.text = "HP " + str(stats[0])
         self.hp.value = stats[0] / 180
         self.hp.color_list = get_color_list(self.hp.value)
-        self.attack_label.text = str(stats[1])
+        self.attack_label.text = "Attack " + str(stats[1])
         self.attack.value = stats[1] / 180
         self.attack.color_list = get_color_list(self.attack.value)
-        self.defense_label.text = str(stats[2])
+        self.defense_label.text = "Defense " + str(stats[2])
         self.defense.value = stats[2] / 180
         self.defense.color_list = get_color_list(self.defense.value)
-        self.sp_attack_label.text = str(stats[3])
+        self.sp_attack_label.text = "Sp. Attack " + str(stats[3])
         self.sp_attack.value = stats[3] / 180
         self.sp_attack.color_list = get_color_list(self.sp_attack.value)
-        self.sp_defense_label.text = str(stats[4])
+        self.sp_defense_label.text = "Sp. Defense " + str(stats[4])
         self.sp_defense.value = stats[4] / 180
         self.sp_defense.color_list = get_color_list(self.sp_defense.value)
-        self.speed_label.text = str(stats[5])
+        self.speed_label.text = "Speed " + str(stats[5])
         self.speed.value = stats[5] / 180
         self.speed.color_list = get_color_list(self.speed.value)
         self.moveset.text = "\n".join(["   " + m.capitalize() for m in get_moveset(pokemonId)])
