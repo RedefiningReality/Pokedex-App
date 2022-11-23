@@ -62,5 +62,7 @@
 - For the dry run week, I'll give you about an hour of time to organize yourselves via team work time and then we'll all come back to the main room and I'll pick teams to present in random order
 
 ## Week 14 ##
+- Some of the fonts on stats were hard to read
+- Nice that it doesn't require network calls, but how are you identify a Pokemon via camera without an API?  Local image detection?
 
 ## Week 15 ##
