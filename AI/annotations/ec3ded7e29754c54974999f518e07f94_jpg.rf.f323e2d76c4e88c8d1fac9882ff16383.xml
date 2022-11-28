@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+<folder/>
+<filename>ec3ded7e29754c54974999f518e07f94_jpg.rf.f323e2d76c4e88c8d1fac9882ff16383.jpg</filename>
+<path>ec3ded7e29754c54974999f518e07f94_jpg.rf.f323e2d76c4e88c8d1fac9882ff16383.jpg</path>
+<source>
+<database>roboflow.ai</database>
+</source>
+<size>
+<width>416</width>
+<height>416</height>
+<depth>3</depth>
+</size>
+<segmented>0</segmented>
+<object>
+<name>Mr. Mime</name>
+<pose>Unspecified</pose>
+<truncated>0</truncated>
+<difficult>0</difficult>
+<occluded>0</occluded>
+<bndbox>
+<xmin>17</xmin>
+<xmax>416</xmax>
+<ymin>1</ymin>
+<ymax>416</ymax>
+</bndbox>
+</object>
+</annotation>

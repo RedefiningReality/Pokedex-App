@@ -19,7 +19,7 @@ def parse_opt(args):
     parser.add_argument("-t", "--image-type", type=str, default="png")
     parser.add_argument("-c", "--classes-file", type=str, default="classes.txt")
     parser.add_argument("-o", "--output-directory", type=str, default="")
-    parser.add_argument("-d", "--data-directory", type=str, default="yolov5/data")
+    parser.add_argument("-d", "--yolov5-directory", type=str, default="yolov5")
     parser.add_argument("-n", "--yaml-file-name", type=str, default="data.yaml")
     return parser.parse_args(args)
 
@@ -64,7 +64,6 @@ def extract_info_from_xml(xml_file):
             for subelem in elem:
                 if subelem.tag == "name":
                     bbox["class"] = subelem.text
-                    
                 elif subelem.tag == "bndbox":
                     for subsubelem in subelem:
                         bbox[subsubelem.tag] = int(subsubelem.text)            
@@ -106,7 +105,7 @@ def convert_to_yolov5(info_dict):
     print("\n".join(print_buffer), file=open(save_file_name, "w"))
 
 def write_yaml(file_name):    
-    images_path = os.path.relpath(args.images_directory, args.data_directory)
+    images_path = os.path.relpath(args.images_directory, args.yolov5_directory)
     
     train_path = "train: " + os.path.join(images_path, "train")
     val_path = "val: " + os.path.join(images_path, "val")
@@ -164,6 +163,7 @@ make_folder(args.output_directory, "labels/val")
 for ann in tqdm(annotations):
     info_dict = extract_info_from_xml(ann)
     convert_to_yolov5(info_dict)
+#exit()
 
 # Read images and labels
 images = [os.path.join(args.images_directory, x) for x in os.listdir(args.images_directory) if x[-3:] == args.image_type]
@@ -182,5 +182,6 @@ move_files_to_folder(val_images, 'images/val')
 move_files_to_folder(train_labels, 'labels/train')
 move_files_to_folder(val_labels, 'labels/val')
 
-yaml_file = os.path.join(args.data_directory, args.yaml_file_name)
+yaml_path = os.path.join(args.yolov5_directory, "data")
+yaml_file = os.path.join(yaml_path, args.yaml_file_name)
 write_yaml(yaml_file)
