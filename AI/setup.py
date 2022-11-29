@@ -99,7 +99,7 @@ def convert_to_yolov5(info_dict):
         print_buffer.append("{} {:.3f} {:.3f} {:.3f} {:.3f}".format(class_id, b_center_x, b_center_y, b_width, b_height))
         
     # Name of the file which we have to save 
-    save_file_name = os.path.join(args.output_directory, "labels", info_dict["filename"].replace(args.image_type, "txt"))
+    save_file_name = os.path.join(args.output_directory, "labels", info_dict["filename"][0:-3] + "txt")
     
     # Save the annotation to disk
     print("\n".join(print_buffer), file=open(save_file_name, "w"))
