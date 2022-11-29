@@ -57,7 +57,7 @@
     "vulnerablities": [ "Fighting", "Rock", "Steel", "Fire" ],
     "resistant": [ "Ice" ],
     "noeffect": [],
-    "color": "#98D8D8"
+    "color": "#FFFFFF"
   },
   {
     "name": "Fighting",
@@ -167,7 +167,7 @@
     "vulnerablities": [ "Fighting", "Ground", "Fire" ],
     "resistant": [ "Normal", "Grass", "Ice", "Poison", "Flying", "Psychic", "Bug", "Rock", "Dragon", "Steel", "Fairy" ],
     "noeffect": [],
-    "color": "#B8B8D0"
+    "color": "#696969"
   },
   {
     "name": "Fairy",
@@ -177,6 +177,6 @@
     "vulnerablities": [ "Poison", "Steel" ],
     "resistant": [ "Fighting", "Bug", "Dark" ],
     "noeffect": [ "Dragon" ],
-    "color": "#F0B6BC"
+    "color": "#F72FE0"
   }
 ]
