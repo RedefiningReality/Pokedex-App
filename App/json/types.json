@@ -37,7 +37,7 @@
     "vulnerablities": [ "Ground" ],
     "resistant": [ "Electric", "Flying", "Steel" ],
     "noeffect": [],
-    "color": "#F8D030"
+    "color": "#E3DC05"
   },
   {
     "name": "Grass",
@@ -87,7 +87,7 @@
     "vulnerablities": [ "Water", "Grass", "Ice" ],
     "resistant": [ "Poison", "Rock" ],
     "noeffect": ["Electric"],
-    "color": "#E0C068"
+    "color": "#C4B106"
   },
   {
     "name": "Flying",
